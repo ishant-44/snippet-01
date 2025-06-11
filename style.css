@@ -36,4 +36,31 @@ body {
   button:hover {
     background: #1e40af;
   }
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3rem 1rem;
+  }
+  
+  .feature-card {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+  }
+  
+  .feature-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-card p {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+  }
   
