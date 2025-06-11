@@ -80,3 +80,7 @@ button:hover {
   color: #94a3b8;
 }
 
+.option-card{
+  display: flex;
+  flex-direction: row;
+}

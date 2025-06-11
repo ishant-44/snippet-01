@@ -4,7 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Choose Your Need</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #00ffe1;
+    }
+
+    .menu-options {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .option-card {
+      background-color: #1f1f1f;
+      border-radius: 16px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0, 255, 225, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .option-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 30px rgba(0, 255, 225, 0.3);
+    }
+
+    .option-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .option-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #00ffe1;
+      color: #000;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00ccae;
+    }
+
+    @media (max-width: 768px) {
+      .menu-options {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .option-card {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
   <section class="menu">
@@ -21,7 +103,7 @@
         <a href="landing.html" class="btn">View</a>
       </div>
       <div class="option-card">
-        <img src="portfoliopreview.jpg" alt="Resume preview" height="300px" width="400px"></img>
+        <img src="image/portfoliopreview.jpg" alt="Resume preview" />
         <h3>Resume Website</h3>
         <a href="resume.html" class="btn">View</a>
       </div>
